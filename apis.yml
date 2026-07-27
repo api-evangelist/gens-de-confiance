@@ -1,8 +1,24 @@
 aid: gens-de-confiance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gens-de-confiance.png
 name: Gens de confiance
-description: 'Gens de confiance is a company surfaced as a portfolio company of partech and added to the
-  API Evangelist network as a stub for enrichment. Sector: Marketplace. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Gens de confiance is a French online classified-ads marketplace built
+  around trust rather than anonymity. Members reach listings and other members through
+  the communities and networks they already belong to and their mutual connections,
+  so buyers and sellers of goods, housing, jobs, services, and holiday rentals transact
+  with people vouched for by a shared circle instead of strangers. The company operates
+  a consumer web and mobile marketplace and is backed by Partech. No public developer
+  program, API documentation, or machine-readable API surface was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/gens-de-confiance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Marketplace
+- Classifieds
+- Trust
+- Community
+- Peer-to-Peer
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gens-de-confiance-domain-security.yml
 - type: Website
   url: https://gensdeconfiance.fr/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
